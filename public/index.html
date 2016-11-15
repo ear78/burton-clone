@@ -11,6 +11,8 @@
 
         <!-- ICON SETS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
 
         <!-- MAIN BUILD CSS FILE -->
         <link rel="stylesheet" href="./build/css/main.css">
@@ -21,11 +23,26 @@
 
     <main role="main" class="main-wrapper">
         <div class="page-wrapper">
+
             <!-- HEADER MENU FOR MOBILE -->
-            <header class="mobile-header">
-                <div></div>
+            <header class="mobile-header-container container-fluid">
+                <div class="mobile-hamburger">
+                    <i class="material-icons">menu</i>
+                </div>
+                <div class="mobile-logo">
+                    <img class="burton-logo" ng-src="./img/burton-logo.svg"/>
+                </div>
+                <div class="mobile-menu-right">
+                    <div class="mobile-search">
+                        <i class="material-icons">search</i>
+                    </div>
+                    <div class="mobile-cart">
+                        <i class="material-icons">add_shopping_cart</i>
+                    </div>
+                </div>
             </header>
 
+            <!-- HEADER FOR IPAD AND GREATER -->
             <header class="main-header-wrapper container-fluid">
                 <div class="main-header-topnav row">
                     <div class="main-header-left col-lg-4">
