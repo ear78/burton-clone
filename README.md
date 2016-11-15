@@ -1,2 +1,2 @@
 # burton-clone
-recreating burton website functionality with Angular while using bootstrap for practice.
+Recreating some of the functionality of the Burton.com website using Angular,HTML, CSS, Gulp, Sass, Node.js, Bootstrap.
