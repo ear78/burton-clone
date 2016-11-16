@@ -60,6 +60,7 @@ a:hover {
     margin-right: 10px;
 }
 
+
 ///////////////////////////////////
 
 .main-header-wrapper {
@@ -127,14 +128,35 @@ a:hover {
 
 //// MOBILE FOOTER MENUS /////////////
 
-// .mobile-dropdown-aboutus {
-//     display: none;
-// }
+.mobile-dropdown-aboutus {
+    height: 100px;
+    width: 100%;
+    // opacity: 1;
+}
 
 .mobile-dropdown-aboutus a {
     display: flex;
     width: 100%;
 }
+
+// ANIMATIONS FOR MOBILE MENU //////
+.mobile-dropdown-aboutus.ng-hide-add,
+.mobile-dropdown-aboutus.ng-hide-remove {
+    transition: all .2s ease;
+}
+
+.mobile-dropdown-aboutus.ng-hide-add-active,
+.mobile-dropdown-aboutus.ng-hide-remove {
+    height: 0px;
+    opacity: 0;
+}
+
+.mobile-dropdown-aboutus.ng-hide-remove-active {
+    height: 100px;
+    opacity: 1;
+}
+
+
 
 //////////////////////////////////////
 // MEDIA QUERIES
