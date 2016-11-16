@@ -1,4 +1,12 @@
 angular.module('myApp')
     .controller('MainCtrl', function($scope){
-        $scope.test2 = "this is working";
+
+        // function for about us mobile dropdown
+        $scope.showAboutUs = false;
+        $scope.toggleAboutUs = function(){
+            $scope.showAboutUs = !$scope.showAboutUs;
+        }
+
+
+
     })
