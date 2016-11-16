@@ -20,6 +20,9 @@ a:hover {
     color: lightgrey;
 }
 
+//////////////////////////////////////
+// MOBILE MENU
+/////////////////////////////////////
 .mobile-header-container {
     display: flex;
     justify-content: space-between;
@@ -28,8 +31,9 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: 55px;
     background: #fff;
+    z-index: 1000;
 }
 
 .mobile-logo {
@@ -52,6 +56,12 @@ a:hover {
     justify-content: flex-end;
 }
 
+.mobile-search {
+    margin-right: 10px;
+}
+
+///////////////////////////////////
+
 .main-header-wrapper {
     display: none;
 }
@@ -65,7 +75,7 @@ a:hover {
 }
 
 .burton-logo {
-    width: 130px;
+    width: 115px;
 }
 
 .background-layer {
@@ -79,8 +89,69 @@ a:hover {
     padding: 10px 15px;
 }
 
+/////////////////////////////////
+// FOOTER SECTION
+////////////////////////////////
+
+.footer-container {
+    background: #fff;
+    padding: 44px 15px;
+}
+
+.footer-top-row {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid grey;
+}
+
+.footer-inner-row-left {
+    display: none;
+    width: 50%;
+}
+
+.footer-forms {
+    width: 50%;
+}
+
+.footer-bottom-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.primary-links-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+//// MOBILE FOOTER MENUS /////////////
+
+// .mobile-dropdown-aboutus {
+//     display: none;
+// }
+
+.mobile-dropdown-aboutus a {
+    display: flex;
+    width: 100%;
+}
+
+//////////////////////////////////////
+// MEDIA QUERIES
+//////////////////////////////////////
+
+
 @media (min-width: 768px){
     .main-header-wrapper {
         display: initial;
+    }
+
+    .footer-top-row {
+        flex-direction: row;
+    }
+
+    .footer-inner-row-left {
+        display: flex;
+        width: 50%;
     }
 }

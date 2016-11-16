@@ -1,11 +1,11 @@
 .main-banner-top {
-    padding-top: 50px;
+    margin-top: 55px;
     background-image: url('../../img/home/gift-guide-overview-basic-bg-2x.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
     overflow: hidden;
-    height: 460px;
+    height: 320px;
     margin-bottom: 80px;
 }
 
@@ -100,46 +100,4 @@
 
 .carousel-image {
     max-width: 100%;
-}
-
-.footer-container {
-    background: #fff;
-    padding: 44px 15px;
-}
-
-.footer-top-row {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid grey;
-}
-
-.footer-inner-row-left {
-    display: flex;
-    width: 50%;
-}
-
-.footer-forms {
-    width: 50%;
-}
-
-.footer-bottom-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 20px;
-}
-
-.primary-links-nav {
-    display: flex;
-    flex-direction: column;
-}
-
-//////////////////////////////////////
-// MEDIA QUERIES
-//////////////////////////////////////
-
-@media (min-width: 768px) {
-    .footer-top-row {
-        flex-direction: row;
-    }
 }

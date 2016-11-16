@@ -9,6 +9,7 @@
         <!-- BOOTSTRAP CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
 
+
         <!-- ICON SETS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -16,6 +17,8 @@
 
         <!-- MAIN BUILD CSS FILE -->
         <link rel="stylesheet" href="./build/css/main.css">
+
+
 
     </head>
 
@@ -37,7 +40,7 @@
                         <i class="material-icons">search</i>
                     </div>
                     <div class="mobile-cart">
-                        <i class="material-icons">add_shopping_cart</i>
+                        <i class="material-icons">shopping_cart</i>
                     </div>
                 </div>
             </header>
@@ -78,16 +81,112 @@
                 </div>
             </header>
 
+            <!-- UI VIEW FOR ANGULAR -->
+            <ui-view></ui-view>
+
+            <!-- FOOTER SECTION -->
+            <footer class="container-fluid footer-container">
+                <div class="footer-top-row">
+
+                    <!-- MOBILE FOOTER MENU DROPDOWNS -->
+                    <div class="footer-mobile-inner-container">
+                        <div class="footer-mobile-menus-container">
+                            <nav class="footer-mobile-nav">
+                                <h4 ng-click="toggleAboutUs()" class="h4title">About Us <i class="material-icons">add</i></h4>
+                                <div ng-show="showAboutUs" class="mobile-dropdown-aboutus">
+                                    <a href="#">About Burton</a>
+                                    <a href="#">About Burton</a>
+                                    <a href="#">About Burton</a>
+                                    <a href="#">About Burton</a>
+                                    <a href="#">About Burton</a>
+                                    <a href="#">About Burton</a>
+                                </div>
+                            </nav>
+                        </div>
+                        <div>
+                            <h4>Discover</h4>
+                        </div>
+                        <h4>Customer Service</h4>
+                    </div>
+                    <!-- END MOBILE FOOTER MENU DROPDOWNS -->
+
+                    <!-- DESKTOP VIEW FOOTER INNER MENU -->
+                    <div class="footer-inner-row-left">
+                        <div class="primary-links-column">
+                            <nav class="primary-links-nav">
+                                <h4 class="primary-links-column-title">
+                                    About Us
+                                </h4>
+                                <a href="#">About Burton</a>
+                                <a href="#">Take A Tour</a>
+                                <a href="#">Sustainability</a>
+                                <a href="#">Chill Foundation</a>
+                                <a href="#">Careers</a>
+                                <a href="#">Performer Program</a>
+                            </nav>
+                        </div>
+                        <div class="primary-links-column">
+                            <nav class="primary-links-nav">
+                                <h4 class="primary-links-column-title">
+                                    Discover
+                                </h4>
+                                <a href="#">About Burton</a>
+                                <a href="#">Take A Tour</a>
+                                <a href="#">Sustainability</a>
+                                <a href="#">Chill Foundation</a>
+                                <a href="#">Careers</a>
+                            </nav>
+                        </div>
+                        <div class="primary-links-column">
+                            <nav class="primary-links-nav">
+                                <h4 class="primary-links-column-title">
+                                    Customer Service
+                                </h4>
+                                <a href="#">About Burton</a>
+                                <a href="#">Take A Tour</a>
+                                <a href="#">Sustainability</a>
+                                <a href="#">Chill Foundation</a>
+                                <a href="#">Careers</a>
+                                <span>phone (800)881-3138</span>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- END DESKTOP FOOTER INNER VIEW -->
+
+                    <div class="footer-forms">
+                        <div class="footer-signup">
+                            <form>
+                                <label>Sign Up for Burton News, Sales, and Deals</label>
+                                <input type="email" placeholder="Enter Your Email Address"/>
+                                <button type="submit">mail icon</button>
+                            </form>
+                        </div>
+                        <div class="footer-findstore">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom-row">
+                    <div class="secondary-links">
+                        <a href="#">us/en</a>
+                        <a href="#">&copy2016 Burton Snowboards</a>
+                    </div>
+                    <div class="secondary-links social-links">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube-play"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-pinterest"></a>
+                    </div>
+                    <div class="secondary-links">
+                        <a href="#">Terms &amp</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">Site Map</a>
+                    </div>
+                </div>
+            </footer>
+
         </div>
     </main>
-
-    <!-- UI VIEW FOR ANGULAR -->
-    <ui-view></ui-view>
-
-
-
-
-
 
 
 
