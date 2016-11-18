@@ -1,13 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
 /*
 
-bodyBackgroud: #f5f5f5;
 buttonHeadlineLinks: #4e4c4b;
-carouselBackground: #e5e5e5;
+
 */
 
+//// FONTS SASS VARIABLES ////////
+$mainFont: 'Lato', sans-serif;
+$h1: 3em;
+$h2: 2.25em;
+$h3: 1.75em;
+$h4: 1.125em;
+$h5: .875em;
+$h6: .675em;
 
+//// COLORS SASS VARIABLES //////
+$bodyBackground: #f5f5f5;
+$darkgrey: #4e4c4b;
+$lightgrey: #d4d4d4;
+$grey: #918d8d;
+$carouselBackground: #e5e5e5;
+
+
+//// ICON FONT BASE STYLES ////
+.material-icons,
+.fa {
+    color: $grey;
+}
+
+//// FONT SCALING /////////////
+h1 {
+  font-size: $h1;
+}
+
+h2 {
+  font-size: $h2;
+}
+
+h3 {
+  font-size: $h3;
+}
+
+h4 {
+  font-size: $h4;
+}
+
+h5 {
+  font-size: $h5;
+}
+
+h6 {
+  font-size: $h6;
+}
+
+//// MAIN STYLES //////////////
 body {
     background-color: #f5f5f5;
+    font-family: $mainFont;
 }
 
 a {
@@ -43,7 +93,7 @@ a:hover {
     left: 0;
     width: 100%;
     text-align: center;
-    padding: 13px;
+    padding: 18px 13px;
 }
 
 .mobile-hamburger {
@@ -96,7 +146,7 @@ a:hover {
 
 .footer-container {
     background: #fff;
-    padding: 44px 15px;
+    padding: 44px 0px;
 }
 
 .footer-top-row {
@@ -111,14 +161,57 @@ a:hover {
 }
 
 .footer-forms {
-    width: 50%;
+    position: relative;
+    width: 100%;
+    padding: 35px 20px 15px;
+      label {
+          margin-bottom: 10px;
+      }
+      input {
+          width: 100%;
+          border: 1px solid $lightgrey;
+          padding: 12px 10px;
+      }
+      .footer-mail-icon {
+          color: $grey;
+          position: absolute;
+          top: 73px;
+          right: 35px;
+      }
+      .footer-location-icon {
+          color: $grey;
+          position: absolute;
+          top: 179px;
+          right: 35px;
+      }
+      form {
+        margin-bottom: 20px;
+      }
 }
+
 
 .footer-bottom-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 20px;
+    padding: 50px 25px;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+      .secondary-links.social-links {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        order: 1;
+        margin-bottom: 40px;
+      }
+      .secondary-links {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        order: 2;
+        margin-bottom: 20px;
+      }
 }
 
 .primary-links-nav {
@@ -126,7 +219,20 @@ a:hover {
     flex-direction: column;
 }
 
+.social-links a {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #918d8d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 //// MOBILE FOOTER MENUS /////////////
+/////////////////////////////////////
 
 .mobile-dropdown-aboutus {
     height: 100px;
@@ -139,7 +245,19 @@ a:hover {
     width: 100%;
 }
 
-// ANIMATIONS FOR MOBILE MENU //////
+.footer-mobile-menus-container {
+    border-bottom: 1px solid grey;
+    padding: 10px;
+}
+
+.footer-mobile-nav h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+// NG-ANIMATIONS FOR MOBILE MENU //////
 .mobile-dropdown-aboutus.ng-hide-add,
 .mobile-dropdown-aboutus.ng-hide-remove {
     transition: all .2s ease;
