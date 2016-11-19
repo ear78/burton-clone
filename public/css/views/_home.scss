@@ -1,4 +1,35 @@
+//// MOBILE VIEWS////////////////////
+.main-banner-top-container-mobile {
+    background-color: $bgLightgrey;
+    margin-bottom: 25px;
+}
+
+.main-banner-top-mobile {
+    margin-top: 55px;
+    background-image: url('../../img/home/gift-guide-overview-basic-bg-2x.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    overflow: hidden;
+    height: 320px;
+    margin-bottom: 40px;
+}
+
+.secondary-banner-container-mobile {
+    position: relative;
+    background-image: url('../../img/home/best-in-snow-mens-basic-bg-2x.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    overflow: hidden;
+    height: 460px;
+    margin-bottom: 40px;
+}
+
+
+//// DESKTOP VIEWS ////////////////////
 .main-banner-top {
+    display: none;
     margin-top: 55px;
     background-image: url('../../img/home/gift-guide-overview-basic-bg-2x.jpg');
     background-size: cover;
@@ -9,7 +40,12 @@
     margin-bottom: 80px;
 }
 
+.secondary-banner-container {
+    display: none;
+}
+
 .secondary-banner {
+    padding-top: 20px;
     background-image: url('../../img/home/best-in-snow-mens-basic-bg-2x.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,6 +62,9 @@
 
 .secondary-banner-img-container {
     position: absolute;
+    top: 240px;
+    width: 55%;
+    left: 25px;
 }
 
 .secondary-banner-img2 {
@@ -71,6 +110,7 @@
 .third-section-textbox {
     padding: 15px;
     background: #fff;
+    margin-bottom: 20px;
 }
 
 .third-section-textbox-btn {
@@ -82,7 +122,8 @@
 
 .third-section-textbox-btn a {
     border: 1px solid gray;
-    padding: 10px 15px;
+    padding: 10px 25px;
+    text-transform: uppercase;
 }
 
 .fourth-section-container {
@@ -100,4 +141,14 @@
 
 .carousel-image {
     max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .main-banner-top-container-mobile {
+    display: none;
+  }
+  .main-banner-top {
+      display: block;
+  }
+
 }
