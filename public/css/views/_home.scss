@@ -62,8 +62,8 @@
 
 .secondary-banner-img-container {
     position: absolute;
-    top: 240px;
-    width: 55%;
+    top: 245px;
+    width: 57%;
     left: 25px;
 }
 
@@ -127,8 +127,10 @@
 }
 
 .fourth-section-container {
+    position: relative;
     padding-top: 80px;
     background: #e5e5e5;
+    height: 600px;
 }
 
 .fourth-section-textbox {
@@ -139,6 +141,16 @@
     padding: 80px 0;
 }
 
+.picture-holder {
+    width: 1000px;
+}
+
+.carousel-pic-container {
+    width: 200px;
+    display: inline-block;
+    position: relative;
+    margin: 0 5px;
+}
 .carousel-image {
     max-width: 100%;
 }

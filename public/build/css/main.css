@@ -167,6 +167,37 @@ a:hover {
   border: 1px solid #4e4c4b;
   padding: 10px 25px; }
 
+.picture-contain {
+  border: 2px solid;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 345px; }
+
+.pic1 {
+  left: -25px; }
+
+.pic2 {
+  left: -25px; }
+
+.pic3 {
+  left: -25px; }
+
+.pic4 {
+  left: -25px; }
+
+.picture-holder i {
+  position: absolute;
+  z-index: 10;
+  top: 80px;
+  font-size: 50px;
+  color: #262626; }
+
+.picture-holder i.arrow-right {
+  right: 0px; }
+
 .footer-container {
   background: #fff;
   padding: 44px 0px; }
@@ -334,8 +365,8 @@ a:hover {
 
 .secondary-banner-img-container {
   position: absolute;
-  top: 240px;
-  width: 55%;
+  top: 245px;
+  width: 57%;
   left: 25px; }
 
 .secondary-banner-img2 {
@@ -388,14 +419,25 @@ a:hover {
   text-transform: uppercase; }
 
 .fourth-section-container {
+  position: relative;
   padding-top: 80px;
-  background: #e5e5e5; }
+  background: #e5e5e5;
+  height: 600px; }
 
 .fourth-section-textbox {
   margin-bottom: 35px; }
 
 .carousel-container {
   padding: 80px 0; }
+
+.picture-holder {
+  width: 1000px; }
+
+.carousel-pic-container {
+  width: 200px;
+  display: inline-block;
+  position: relative;
+  margin: 0 5px; }
 
 .carousel-image {
   max-width: 100%; }
