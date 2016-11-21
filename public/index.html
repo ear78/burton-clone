@@ -82,42 +82,8 @@
             <!-- UI VIEW FOR ANGULAR -->
             <ui-view></ui-view>
 
-            <!-- PICTURE CAROUSEL -->
-            <section class="container-fluid fourth-section-container">
-                <div class="row">
-                    <div class="col-xs-4">
-                        <h3>#Burton</h3>
-                        <span>inst</span><a href="#">Follow Us</a>
-                    </div>
-                    <div class="fourth-section-textbox col-xs-8">
-                        <h2>Built For Adventure</h2>
-                        <p>Moments that inspire, stories worth sharing, all captured with Instagram. Shop and explore your favorite photos and share your pics to be featured right here.</p>
-                    </div>
-                    <div class="offset-md-4 col-xs-12">
-                        <a class="standard-button" href="#">Shop Gallery</a>
-                    </div>
-                </div>
-                <div class="picture-contain">
-                  <div class="picture-holder">
-                    <i class="material-icons">keyboard_arrow_left</i>
-                    <i class="material-icons arrow-right">keyboard_arrow_right</i>
-                    <div class=" carousel-pic-container pic1">
-                        <img class="carousel-image" ng-src="./img/carousel/1mKrUPlxJ2_-P4SFhgRifA3mC_M_zJjCuX0NhD_RhjI=.jpeg"/>
-                    </div>
-                    <div class=" carousel-pic-container pic2">
-                        <img class="carousel-image" ng-src="./img/carousel/1mKrUPlxJ2_-P4SFhgRifA3mC_M_zJjCuX0NhD_RhjI=.jpeg"/>
-                    </div>
-                    <div class=" carousel-pic-container pic3">
-                        <img class="carousel-image" ng-src="./img/carousel/1mKrUPlxJ2_-P4SFhgRifA3mC_M_zJjCuX0NhD_RhjI=.jpeg"/>
-                    </div>
-                    <div class=" carousel-pic-container pic4">
-                        <img class="carousel-image" ng-src="./img/carousel/1mKrUPlxJ2_-P4SFhgRifA3mC_M_zJjCuX0NhD_RhjI=.jpeg"/>
-                    </div>
-                  </div>
-                </div>
-
-            </section>
-
+            <!-- PICTURE CAROUSEL DIRECTIVE -->
+            <pic-gallery />
 
             <!-- FOOTER SECTION -->
             <footer class="container-fluid footer-container">
@@ -262,6 +228,7 @@
     <!-- JAVASCRIPT FILES FOR VIEWS AND APP -->
     <script src="./js/app.js"></script>
     <script src="./js/controllers/MainCtrl.js"></script>
+    <script src="./js/directives/picGallery.js"></script>
 
 
 

@@ -12,6 +12,8 @@
     background-position: 50%;
     overflow: hidden;
     height: 320px;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 40px;
 }
 
@@ -62,9 +64,9 @@
 
 .secondary-banner-img-container {
     position: absolute;
-    top: 245px;
-    width: 57%;
-    left: 25px;
+    top: 230px;
+    width: 65%;
+    left: 5%;
 }
 
 .secondary-banner-img2 {
@@ -125,7 +127,7 @@
 
 .third-section-textbox-btn a {
     border: 1px solid gray;
-    padding: 10px 25px;
+    padding: 12px 25px;
     text-transform: uppercase;
     display: block;
     max-width: 150px;
@@ -136,13 +138,56 @@
     position: relative;
     padding-top: 80px;
     background: #e5e5e5;
-    height: 600px;
+    height: 670px;
+    .fourth-section-content-insta {
+      position: absolute;
+      bottom: 50px;
+      left: 0;
+    }
+}
+
+.fourth-section-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    .fourth-section-content-insta-desktop {
+      display: none;
+      h4 {
+        letter-spacing: 1px;
+        font-size: 1.125em;
+      }
+    }
+}
+
+.fourth-section-content-insta {
+  h4 {
+    letter-spacing: 1px;
+    font-size: 1.125em;
+    margin-bottom: 10px;
+  }
+  a {
+    color: #4e4c4b;
+  }
+  span {
+    font-family: $mainFont;
+    text-transform: uppercase;
+    margin-left: 3px;
+    text-decoration: underline;
+  }
 }
 
 .fourth-section-textbox {
-    margin-bottom: 35px;
+    margin-bottom: 50px;
     h2 {
-      font-size: 2.5em;
+      font-size: 2.15em;
+      margin-bottom: 15px;
+    }
+    p {
+      line-height: 1.4;
+      font-size: 1.1em;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
     }
 }
 
