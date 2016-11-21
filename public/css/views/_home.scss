@@ -108,9 +108,12 @@
 }
 
 .third-section-textbox {
-    padding: 15px;
+    padding: 20px 20px 35px;
     background: #fff;
     margin-bottom: 20px;
+    h2 {
+      font-size: 2.5em;
+    }
 }
 
 .third-section-textbox-btn {
@@ -124,6 +127,9 @@
     border: 1px solid gray;
     padding: 10px 25px;
     text-transform: uppercase;
+    display: block;
+    max-width: 150px;
+    text-align: center;
 }
 
 .fourth-section-container {
@@ -135,25 +141,11 @@
 
 .fourth-section-textbox {
     margin-bottom: 35px;
+    h2 {
+      font-size: 2.5em;
+    }
 }
 
-.carousel-container {
-    padding: 80px 0;
-}
-
-.picture-holder {
-    width: 1000px;
-}
-
-.carousel-pic-container {
-    width: 200px;
-    display: inline-block;
-    position: relative;
-    margin: 0 5px;
-}
-.carousel-image {
-    max-width: 100%;
-}
 
 @media (min-width: 768px) {
   .main-banner-top-container-mobile {
