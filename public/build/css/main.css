@@ -281,7 +281,8 @@ a:hover {
 
 .mobile-dropdown-aboutus {
   height: 100px;
-  width: 100%; }
+  width: 100%;
+  opacity: 1; }
 
 .mobile-dropdown-aboutus a {
   display: flex;
