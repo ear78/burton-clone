@@ -9,7 +9,6 @@
         <!-- BOOTSTRAP CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
 
-
         <!-- ICON SETS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -25,192 +24,17 @@
       <main role="main" class="main-wrapper">
         <div class="page-wrapper">
 
-            <!-- HEADER MENU FOR MOBILE -->
-            <header class="mobile-header-container container-fluid">
-                <div class="mobile-hamburger">
-                    <i class="material-icons">menu</i>
-                </div>
-                <div class="mobile-logo">
-                    <img class="burton-logo" ng-src="./img/burton-logo.svg"/>
-                </div>
-                <div class="mobile-menu-right">
-                    <div class="mobile-search">
-                        <i class="material-icons">search</i>
-                    </div>
-                    <div class="mobile-cart">
-                        <i class="material-icons">shopping_cart</i>
-                    </div>
-                </div>
-            </header>
-
-            <!-- HEADER FOR IPAD AND GREATER -->
-            <header class="main-header-wrapper container-fluid">
-                <div class="main-header-topnav row">
-                    <div class="main-header-left col-lg-4">
-                        <div><a href="#">Blogs</a></div>
-                        <div><a href="#">Sustainability</a></div>
-                        <div><a href="#">Team</a></div>
-                    </div>
-                    <div class="main-header-mid col-lg-4 text-xs-center">
-                        <div>Free Shipping On Orders Over $50</div>
-                    </div>
-                    <div class="main-header-right col-lg-4">
-                        <div>Stores</div>
-                        <div>US/EN</div>
-                        <div>Account</div>
-                        <div>Cart</div>
-                    </div>
-                </div>
-                <div class="main-header-bottomnav row">
-                    <div class="col-lg-3">
-                        <img class="burton-logo" ng-src="./img/burton-logo.svg"/>
-                    </div>
-                    <div class="col-lg-6">
-                        <span><a href="#">Men</a></span>
-                        <span><a href="#">Women</a></span>
-                        <span><a href="#">Kids</a></span>
-                        <span><a href="#">Bags & luggage</a></span>
-                        <span><a href="#">Coalition</a></span>
-                        <span><a href="#">Sale</a></span>
-                    </div>
-                    <div class="col-lg-3">
-                        <input type="text" placeholder="Search" class="search-text"/>
-                    </div>
-                </div>
-            </header>
+            <!-- HEADER DIRECTIVE -->
+            <header-directive></header-directive>
 
             <!-- UI VIEW FOR ANGULAR -->
             <ui-view></ui-view>
 
             <!-- PICTURE CAROUSEL DIRECTIVE -->
-            <pic-gallery />
+            <pic-gallery></pic-gallery>
 
-            <!-- FOOTER SECTION -->
-            <footer class="container-fluid footer-container">
-                <div class="footer-top-row" >
-
-                    <!-- MOBILE FOOTER MENU DROPDOWNS -->
-                    <div class="footer-mobile-inner-container">
-                        <div class="footer-mobile-menus-container">
-                            <nav class="footer-mobile-nav">
-                                <h4 ng-click="toggleAboutUs()" class="h4title">About Us <i class="material-icons">add</i></h4>
-                                <div ng-show="showAboutUs" class="mobile-dropdown-aboutus">
-                                    <a href="#">About Burton</a>
-                                    <a href="#">Take A Tour</a>
-                                    <a href="#">Sustainability</a>
-                                    <a href="#">Chill Foundation</a>
-                                    <a href="#">Careers</a>
-                                    <a href="#">Performer Program</a>
-                                </div>
-                            </nav>
-                        </div>
-                        <div class="footer-mobile-menus-container">
-                            <nav class="footer-mobile-nav">
-                                <h4 ng-click="toggleDiscover()" class="h4title">Discover<i class="material-icons">add</i></h4>
-                                <div ng-show="showDiscover" class="mobile-dropdown-aboutus">
-                                    <a href="#">Event Details</a>
-                                    <a href="#">Learn To Ride</a>
-                                    <a href="#">The Burton Blog</a>
-                                    <a href="#">Burton Girls Blog</a>
-                                    <a href="#">#Burton Gallery</a>
-                                </div>
-                            </nav>
-                        </div>
-                        <div class="footer-mobile-menus-container">
-                            <nav class="footer-mobile-nav">
-                                <h4 ng-click="toggleCustomerService()" class="h4title">Customer Service <i class="material-icons">add</i></h4>
-                                <div ng-show="showCustomerService" class="mobile-dropdown-aboutus">
-                                    <a href="#">Gift Cards</a>
-                                    <a href="#">Help</a>
-                                    <a href="#">Returns</a>
-                                    <a href="#">Warranty</a>
-                                    <a href="#">Contact Us</a>
-                                    <a href="#">(800)881-3138</a>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                    <!-- END MOBILE FOOTER MENU DROPDOWNS -->
-
-                    <!-- DESKTOP VIEW FOOTER INNER MENU -->
-                    <div class="footer-inner-row-left">
-                        <div class="primary-links-column">
-                            <nav class="primary-links-nav">
-                                <h4 class="primary-links-column-title">
-                                    About Us
-                                </h4>
-                                <a href="#">About Burton</a>
-                                <a href="#">Take A Tour</a>
-                                <a href="#">Sustainability</a>
-                                <a href="#">Chill Foundation</a>
-                                <a href="#">Careers</a>
-                                <a href="#">Performer Program</a>
-                            </nav>
-                        </div>
-                        <div class="primary-links-column">
-                            <nav class="primary-links-nav">
-                                <h4 class="primary-links-column-title">
-                                    Discover
-                                </h4>
-                                <a href="#">About Burton</a>
-                                <a href="#">Take A Tour</a>
-                                <a href="#">Sustainability</a>
-                                <a href="#">Chill Foundation</a>
-                                <a href="#">Careers</a>
-                            </nav>
-                        </div>
-                        <div class="primary-links-column">
-                            <nav class="primary-links-nav">
-                                <h4 class="primary-links-column-title">
-                                    Customer Service
-                                </h4>
-                                <a href="#">About Burton</a>
-                                <a href="#">Take A Tour</a>
-                                <a href="#">Sustainability</a>
-                                <a href="#">Chill Foundation</a>
-                                <a href="#">Careers</a>
-                                <span>phone (800)881-3138</span>
-                            </nav>
-                        </div>
-                    </div>
-                    <!-- END DESKTOP FOOTER INNER VIEW -->
-
-                    <div class="footer-forms">
-                        <div class="footer-signup">
-                          <form>
-                              <label>Sign Up for Burton News, Sales, and Deals</label>
-                              <input type="email" placeholder="Enter Your Email Address"/>
-                              <button type="submit"><i class="material-icons footer-mail-icon">mail_outline</i></button>
-                          </form>
-                        </div>
-                        <div class="footer-findstore">
-                          <form>
-                              <label>Find A Store</label>
-                              <input type="email" placeholder="Enter City, State, or Zip Code"/>
-                              <button type="submit"><i class="material-icons footer-location-icon">location_on</i></button>
-                          </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-bottom-row">
-                    <div class="secondary-links">
-                        <a href="#">US/EN</a>
-                        <a href="#">&copy; 2016 Burton Snowboards</a>
-                    </div>
-                    <div class="secondary-links social-links">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-youtube-play"></a>
-                        <a href="#" class="fa fa-instagram"></a>
-                        <a href="#" class="fa fa-pinterest"></a>
-                    </div>
-                    <div class="secondary-links">
-                        <a href="#">Terms &amp; Privacy</a>
-                        <a href="#">Contact Us</a>
-                        <a href="#">Site Map</a>
-                    </div>
-                </div>
-            </footer>
+            <!-- FOOTER DIRECTIVE -->
+            <footer-directive></footer-directive>
 
         </div>
     </main>
@@ -229,6 +53,8 @@
     <script src="./js/app.js"></script>
     <script src="./js/controllers/MainCtrl.js"></script>
     <script src="./js/directives/picGallery.js"></script>
+    <script src="./js/directives/headerDirective.js"></script>
+    <script src="./js/directives/footerDirective.js"></script>
 
 
 
