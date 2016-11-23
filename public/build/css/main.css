@@ -398,7 +398,8 @@ a:hover {
     width: 84%;
     vertical-align: super; }
   .sidemenu-content-container ul {
-    padding-left: 25px; }
+    padding-left: 25px;
+    display: none; }
   .sidemenu-content-container li {
     padding: 12px 0px; }
 
@@ -407,6 +408,9 @@ a:hover {
   .sidemenu-dropdown-container ul {
     text-transform: uppercase;
     font-size: .875em; }
+  .sidemenu-dropdown-container i {
+    color: #4e4c4b;
+    font-size: 20px; }
 
 .main-banner-top-container-mobile {
   background-color: #efefef;
