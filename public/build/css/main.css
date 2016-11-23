@@ -329,13 +329,71 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
-  background-color: #262626; }
+  background-color: #262626;
+  background-color: rgba(38, 38, 38, 0.6);
+  z-index: 1001; }
 
 .sidemenu-container {
-  display: none;
-  background-color: white; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 275px;
+  background-color: lightgrey;
+  overflow-y: auto;
+  z-index: 1002;
+  padding: 0px 0px 50px; }
+
+.sidemenu-close {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  color: white;
+  z-index: 1001;
+  font-size: 24px;
+  border: 2px solid;
+  border-radius: 50%; }
+
+.sidemenu-header {
+  width: 100%;
+  align-items: center;
+  margin-bottom: 20px; }
+  .sidemenu-header input {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 45px;
+    border: 1px solid grey;
+    padding-left: 15px;
+    text-transform: uppercase; }
+  .sidemenu-header .search {
+    position: absolute;
+    top: 75px;
+    right: 30px;
+    font-size: 30px; }
+
+.sidemenu-account-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0; }
+  .sidemenu-account-container span {
+    vertical-align: super;
+    margin-left: 3px; }
+
+.sidemenu-content-container {
+  background: #fff; }
+  .sidemenu-content-container h4 {
+    border-bottom: 1px solid grey;
+    padding: 15px; }
+  .sidemenu-content-container ul {
+    padding-left: 15px; }
+  .sidemenu-content-container li {
+    padding-top: 15px; }
 
 .main-banner-top-container-mobile {
   background-color: #efefef;
