@@ -1,9 +1,9 @@
 
 <!-- MODAL BACKGROUND SIDEMENU -->
-<div class="sidemenu-modal"><i class="material-icons sidemenu-close">close</i></div>
+<div ng-hide="hideSideMenuModal" ng-click="closeSideMenu()" class="sidemenu-modal"><i class="material-icons sidemenu-close">close</i></div>
 
 <!-- SIDEMENU NAVIGATION -->
-<nav class="sidemenu-container">
+<nav ng-hide="hideSideMenuModal" class="sidemenu-container">
   <header class="sidemenu-header">
     <div class="sidemenu-account-container">
       <p><i class="material-icons">terrain</i><span>us/en</span></p>
@@ -20,6 +20,7 @@
     <!-- Men's dropdown -->
     <div class="sidemenu-dropdown-container">
       <h4>Men</h4>
+      <i class="material-icons">add</i>
       <ul>
         <li>Snowboarding</li>
         <li>Winter Necessities</li>
@@ -31,6 +32,7 @@
     <!-- WOMEN'S DROPDOWN -->
     <div class="sidemenu-dropdown-container">
       <h4>Women</h4>
+      <i class="material-icons">add</i>
       <ul>
         <li>Snowboarding</li>
         <li>Winter Necessities</li>
@@ -42,6 +44,7 @@
     <!-- KIDS DROPDOWN -->
     <div class="sidemenu-dropdown-container">
       <h4>Kids</h4>
+      <i class="material-icons">add</i>
       <ul>
         <li>Snowboarding</li>
         <li>Winter Necessities</li>
@@ -53,6 +56,7 @@
     <!-- BAGS & LUGGAGE DROPDOWN -->
     <div class="sidemenu-dropdown-container">
       <h4>Bags &amp; Luggage</h4>
+      <i class="material-icons">add</i>
       <ul>
         <li>Bags</li>
         <li>Luggage</li>
@@ -62,6 +66,7 @@
     <!-- COALITION -->
     <div class="sidemenu-dropdown-container">
       <h4>Coalition</h4>
+      <i class="material-icons">add</i>
       <ul>
         <li>Available Now</li>
       </ul>
@@ -69,6 +74,7 @@
     <!-- SALE -->
     <div class="sidemenu-dropdown-container">
       <h4>Sale</h4>
+      <i class="material-icons">add</i>
       <ul>
         <li>Men's Sale</li>
         <li>Women's Sale</li>
@@ -79,6 +85,7 @@
     <!-- BLOGS -->
     <div class="sidemenu-dropdown-container">
       <h4>Blogs</h4>
+      <i class="material-icons">add</i>
       <ul>
         <li>Burton Girls</li>
         <li>The Burton Blog</li>
