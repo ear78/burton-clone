@@ -15,8 +15,9 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 275px;
-  background-color: lightgrey;
+  width: 300px;
+  background-color: $sidemenuBackground;
+  color: $sidemenuLightText;
   overflow-y: auto;
   z-index: 1002;
   padding: 0px 0px 50px;
@@ -40,15 +41,15 @@
   input {
     display: block;
     margin: 0 auto;
-    width: 90%;
+    width: 85%;
     height: 45px;
-    border: 1px solid grey;
+    border: 1px solid $carouselBackground;
     padding-left: 15px;
-    text-transform: uppercase;
+    color: $sidemenuLightText;
   }
   .search {
     position: absolute;
-    top: 75px;
+    top: 90px;
     right: 30px;
     font-size: 30px;
   }
@@ -58,10 +59,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 0 35px;
   span {
+    text-transform: uppercase;
     vertical-align: super;
     margin-left: 3px;
   }
@@ -70,13 +72,26 @@
 .sidemenu-content-container {
   background: #fff;
   h4 {
-    border-bottom: 1px solid grey;
-    padding: 15px;
+    font-size: 1em;
+    font-weight: 600;
+    color: $darkgrey;
+    padding: 15px 15px 15px 25px;
+    display: inline-block;
+    width: 84%;
+    vertical-align: super;
   }
   ul {
-    padding-left: 15px;
+    padding-left: 25px;
   }
   li {
-    padding-top: 15px;
+    padding: 12px 0px;
+  }
+}
+
+.sidemenu-dropdown-container {
+  border-bottom: 1px solid $carouselBackground;
+  ul {
+    text-transform: uppercase;
+    font-size: .875em;
   }
 }
