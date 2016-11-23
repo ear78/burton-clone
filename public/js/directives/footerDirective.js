@@ -23,11 +23,6 @@ angular.module('myApp')
             scope.showCustomerService = !scope.showCustomerService;
         }
 
-        //SIDEMENU CLOSE FUNCTIONS
-        scope.hideSideMenuModal = false;
-        scope.closeSideMenu = function(){
-          scope.hideSideMenuModal = !scope.hideSideMenuModal;
-        }
       }
     };
   });

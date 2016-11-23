@@ -88,45 +88,6 @@ a:hover {
   text-decoration: none;
   color: lightgrey; }
 
-.mobile-header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 55px;
-  background: #fff;
-  z-index: 1000; }
-
-.mobile-logo {
-  position: absolute;
-  align-items: center;
-  top: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  padding: 18px 13px; }
-
-.mobile-hamburger {
-  width: 80%; }
-  .mobile-hamburger i {
-    color: #4e4c4b; }
-
-.mobile-menu-right {
-  width: 20%;
-  display: flex;
-  justify-content: flex-end; }
-
-.mobile-search {
-  margin-right: 10px; }
-  .mobile-search i {
-    color: #4e4c4b; }
-
-.mobile-cart i {
-  color: #4e4c4b; }
-
 .info {
   margin-bottom: 40px; }
 
@@ -147,15 +108,6 @@ a:hover {
   padding: 15px;
   text-align: center;
   text-transform: uppercase; }
-
-.main-header-wrapper {
-  display: none; }
-
-.main-header-left {
-  display: flex; }
-
-.main-header-right {
-  display: flex; }
 
 .burton-logo {
   width: 115px; }
@@ -206,6 +158,62 @@ a:hover {
 
 .carousel-image {
   max-width: 100%; }
+
+.mobile-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background: #fff;
+  z-index: 1000; }
+
+.mobile-logo {
+  position: absolute;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 18px 13px;
+  z-index: -1; }
+
+.mobile-hamburger {
+  width: 80%; }
+  .mobile-hamburger i {
+    color: #4e4c4b;
+    padding-right: 15px; }
+
+.mobile-menu-right {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end; }
+
+.mobile-search {
+  margin-right: 10px; }
+  .mobile-search i {
+    color: #4e4c4b; }
+
+.mobile-cart i {
+  color: #4e4c4b; }
+
+.main-header-wrapper {
+  display: none; }
+
+.main-header-left {
+  display: flex; }
+
+.main-header-right {
+  display: flex; }
+
+@media (min-width: 992px) {
+  .main-header-wrapper {
+    display: initial; }
+  .mobile-header-container {
+    display: none; } }
 
 .footer-container {
   background: #fff;
@@ -317,12 +325,6 @@ a:hover {
   .footer-inner-row-left {
     display: flex;
     width: 50%; } }
-
-@media (min-width: 992px) {
-  .main-header-wrapper {
-    display: initial; }
-  .mobile-header-container {
-    display: none; } }
 
 .sidemenu-modal {
   position: fixed;

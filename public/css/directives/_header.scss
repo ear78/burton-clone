@@ -1,0 +1,83 @@
+//////////////////////////////////////
+// MOBILE MENU
+/////////////////////////////////////
+
+.mobile-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background: #fff;
+    z-index: 1000;
+}
+
+.mobile-logo {
+    position: absolute;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 18px 13px;
+    z-index: -1;
+}
+
+.mobile-hamburger {
+    width: 80%;
+    i {
+      color: $darkgrey;
+      padding-right: 15px;
+    }
+}
+
+.mobile-menu-right {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mobile-search {
+    margin-right: 10px;
+    i {
+      color: $darkgrey;
+    }
+}
+
+.mobile-cart {
+    i {
+      color: $darkgrey;
+    }
+}
+
+
+///////////////////////////////////
+
+.main-header-wrapper {
+    display: none;
+}
+
+.main-header-left {
+    display: flex;
+}
+
+.main-header-right {
+    display: flex;
+}
+
+///////////////////////////////////////
+//// MEDIA QUERIES
+//////////////////////////////////////
+
+@media (min-width: 992px) {
+  .main-header-wrapper {
+      display: initial;
+  }
+
+  .mobile-header-container {
+    display: none;
+  }
+}
