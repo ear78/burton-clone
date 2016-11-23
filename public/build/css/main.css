@@ -340,8 +340,9 @@ a:hover {
   top: 0;
   left: 0;
   height: 100%;
-  width: 275px;
-  background-color: lightgrey;
+  width: 300px;
+  background-color: #f8f8f8;
+  color: #8a8888;
   overflow-y: auto;
   z-index: 1002;
   padding: 0px 0px 50px; }
@@ -363,14 +364,14 @@ a:hover {
   .sidemenu-header input {
     display: block;
     margin: 0 auto;
-    width: 90%;
+    width: 85%;
     height: 45px;
-    border: 1px solid grey;
+    border: 1px solid #e5e5e5;
     padding-left: 15px;
-    text-transform: uppercase; }
+    color: #8a8888; }
   .sidemenu-header .search {
     position: absolute;
-    top: 75px;
+    top: 90px;
     right: 30px;
     font-size: 30px; }
 
@@ -378,22 +379,34 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
-  padding: 20px 0; }
+  padding: 20px 0 35px; }
   .sidemenu-account-container span {
+    text-transform: uppercase;
     vertical-align: super;
     margin-left: 3px; }
 
 .sidemenu-content-container {
   background: #fff; }
   .sidemenu-content-container h4 {
-    border-bottom: 1px solid grey;
-    padding: 15px; }
+    font-size: 1em;
+    font-weight: 600;
+    color: #4e4c4b;
+    padding: 15px 15px 15px 25px;
+    display: inline-block;
+    width: 84%;
+    vertical-align: super; }
   .sidemenu-content-container ul {
-    padding-left: 15px; }
+    padding-left: 25px; }
   .sidemenu-content-container li {
-    padding-top: 15px; }
+    padding: 12px 0px; }
+
+.sidemenu-dropdown-container {
+  border-bottom: 1px solid #e5e5e5; }
+  .sidemenu-dropdown-container ul {
+    text-transform: uppercase;
+    font-size: .875em; }
 
 .main-banner-top-container-mobile {
   background-color: #efefef;
