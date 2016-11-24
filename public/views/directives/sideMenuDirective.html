@@ -1,6 +1,6 @@
 
 <!-- MODAL BACKGROUND SIDEMENU -->
-<div ng-hide="hideSideMenu" ng-click="closeSideMenu()" class="sidemenu-modal"><i class="material-icons sidemenu-close">close</i></div>
+<div ng-hide="hideSideMenu" ng-click="closeSideMenu()" class="sidemenu-modal"><i ng-class="{'open': toggle}" class="material-icons sidemenu-close">close</i></div>
 
 <!-- SIDEMENU NAVIGATION -->
 <nav ng-hide="hideSideMenu" class="sidemenu-container">

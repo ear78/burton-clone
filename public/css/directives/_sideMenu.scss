@@ -1,3 +1,43 @@
+///////////////////////////////////////////
+// NG-ANIMATIONS FOR MOBILE SIDEMENU
+///////////////////////////////////////////
+
+.sidemenu-container.ng-hide-add {
+  transition: transform .1s ease;
+}
+
+.sidemenu-container.ng-hide-remove {
+  transition: transform .4s ease;
+}
+
+.sidemenu-container.ng-hide-add-active,
+.sidemenu-container.ng-hide-remove {
+  transform: translateX(-300px);
+}
+
+.sidemenu-container.ng-hide-remove-active {
+  transform: translateX(0px);
+}
+
+//////// CLOSE BUTTON ANIMATIONS //////////
+
+.sidemenu-close.open-add,
+.sidemenu-close.open-remove {
+  transition: transform .3s ease .2s;
+}
+
+.sidemenu-close.open,
+.sidemenu-close.open-add-active {
+  transform: scale(1.0);
+}
+
+.sidemenu-close.open-remove-active {
+  transform: scale(1.0);
+}
+
+
+///////////////////////////////////////////
+
 .sidemenu-modal {
   position: fixed;
   top: 0;
@@ -24,14 +64,16 @@
 }
 
 .sidemenu-close {
-  position: absolute;;
-  right: 15px;
-  top: 13px;
+  position: absolute;
+  padding: 3px;
+  right: 25px;
+  top: 18px;
   color: white;
   z-index: 1001;
-  font-size: 24px;
-  border: 2px solid;
+  font-size: 19px;
+  border: 1px solid;
   border-radius: 50%;
+  transform: scale(0);
 }
 
 .sidemenu-header {
