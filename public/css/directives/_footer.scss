@@ -91,17 +91,20 @@
 }
 
 
-
-//// MOBILE FOOTER MENUS /////////////
+//////////////////////////////////////
+//// MOBILE FOOTER MENUS
 /////////////////////////////////////
 
 .mobile-dropdown-aboutus {
-    height: 100px;
+    max-height: 300px;
     width: 100%;
     opacity: 1;
+    text-transform: uppercase;
+    font-size: .9em;
 }
 
 .mobile-dropdown-aboutus a {
+    padding: 10px 0px;
     display: flex;
     width: 100%;
 }
@@ -117,24 +120,27 @@
     align-items: center;
 }
 
-
+///////////////////////////////////////
 // NG-ANIMATIONS FOR MOBILE MENU //////
+//////////////////////////////////////
 .mobile-dropdown-aboutus.ng-hide-add,
 .mobile-dropdown-aboutus.ng-hide-remove {
-    transition: all .2s ease;
+    transition: opacity .1s ease, max-height .3s ease;
 }
 
 .mobile-dropdown-aboutus.ng-hide-add-active,
 .mobile-dropdown-aboutus.ng-hide-remove {
-    height: 0px;
+    max-height: 0px;
     opacity: 0;
 }
 
 .mobile-dropdown-aboutus.ng-hide-remove-active {
-    height: 100px;
+    max-height: 300px;
     opacity: 1;
 }
 
+
+///////////////////////////////////////
 
 
 //////////////////////////////////////

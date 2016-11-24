@@ -288,11 +288,14 @@ a:hover {
   justify-content: center; }
 
 .mobile-dropdown-aboutus {
-  height: 100px;
+  max-height: 300px;
   width: 100%;
-  opacity: 1; }
+  opacity: 1;
+  text-transform: uppercase;
+  font-size: .9em; }
 
 .mobile-dropdown-aboutus a {
+  padding: 10px 0px;
   display: flex;
   width: 100%; }
 
@@ -307,15 +310,15 @@ a:hover {
 
 .mobile-dropdown-aboutus.ng-hide-add,
 .mobile-dropdown-aboutus.ng-hide-remove {
-  transition: all .2s ease; }
+  transition: opacity .1s ease, max-height .3s ease; }
 
 .mobile-dropdown-aboutus.ng-hide-add-active,
 .mobile-dropdown-aboutus.ng-hide-remove {
-  height: 0px;
+  max-height: 0px;
   opacity: 0; }
 
 .mobile-dropdown-aboutus.ng-hide-remove-active {
-  height: 100px;
+  max-height: 300px;
   opacity: 1; }
 
 @media (min-width: 768px) {
@@ -325,6 +328,30 @@ a:hover {
   .footer-inner-row-left {
     display: flex;
     width: 50%; } }
+
+.sidemenu-container.ng-hide-add {
+  transition: transform .1s ease; }
+
+.sidemenu-container.ng-hide-remove {
+  transition: transform .4s ease; }
+
+.sidemenu-container.ng-hide-add-active,
+.sidemenu-container.ng-hide-remove {
+  transform: translateX(-300px); }
+
+.sidemenu-container.ng-hide-remove-active {
+  transform: translateX(0px); }
+
+.sidemenu-close.open-add,
+.sidemenu-close.open-remove {
+  transition: transform .3s ease .2s; }
+
+.sidemenu-close.open,
+.sidemenu-close.open-add-active {
+  transform: scale(1); }
+
+.sidemenu-close.open-remove-active {
+  transform: scale(1); }
 
 .sidemenu-modal {
   position: fixed;
@@ -351,13 +378,15 @@ a:hover {
 
 .sidemenu-close {
   position: absolute;
-  right: 15px;
-  top: 13px;
+  padding: 3px;
+  right: 25px;
+  top: 18px;
   color: white;
   z-index: 1001;
-  font-size: 24px;
-  border: 2px solid;
-  border-radius: 50%; }
+  font-size: 19px;
+  border: 1px solid;
+  border-radius: 50%;
+  transform: scale(0); }
 
 .sidemenu-header {
   width: 100%;
