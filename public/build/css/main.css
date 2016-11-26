@@ -86,12 +86,16 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: lightgrey; }
+  color: #888888; }
+
+a:active {
+  color: #459a9d; }
 
 .info {
   margin-bottom: 40px; }
 
 .subtitle {
+  text-transform: uppercase;
   margin-bottom: 30px; }
 
 .title {
@@ -121,6 +125,9 @@ a:hover {
   border: 1px solid #4e4c4b;
   padding: 12px 25px;
   text-transform: uppercase; }
+
+.standard-button:hover {
+  border-color: #888888; }
 
 .picture-contain {
   width: 100%;
@@ -158,6 +165,17 @@ a:hover {
 
 .carousel-image {
   max-width: 100%; }
+
+@media (min-width: 768px) {
+  .info {
+    color: #fff; }
+  .subtitle {
+    font-size: 1.125em;
+    margin-bottom: 30px; }
+  .btn-action-container {
+    border: 1px solid #FFF; }
+  .btn-action-container a {
+    color: #fff; } }
 
 .mobile-header-container {
   display: flex;
@@ -240,6 +258,8 @@ a:hover {
     width: 100%;
     border: 1px solid #d4d4d4;
     padding: 12px 10px; }
+  .footer-forms input:focus {
+    outline: none; }
   .footer-forms .footer-mail-icon {
     color: #918d8d;
     position: absolute;
@@ -310,7 +330,7 @@ a:hover {
 
 .mobile-dropdown-aboutus.ng-hide-add,
 .mobile-dropdown-aboutus.ng-hide-remove {
-  transition: opacity .1s ease, max-height .3s ease; }
+  transition: opacity 300ms ease, max-height .4s ease; }
 
 .mobile-dropdown-aboutus.ng-hide-add-active,
 .mobile-dropdown-aboutus.ng-hide-remove {
@@ -477,13 +497,14 @@ a:hover {
   background-repeat: no-repeat;
   background-position: 50%;
   overflow: hidden;
-  height: 320px;
+  height: 460px;
   margin-bottom: 80px; }
 
 .secondary-banner-container {
   display: none; }
 
 .secondary-banner {
+  position: relative;
   padding-top: 20px;
   background-image: url("../../img/home/best-in-snow-mens-basic-bg-2x.jpg");
   background-size: cover;
@@ -607,4 +628,9 @@ a:hover {
   .main-banner-top-container-mobile {
     display: none; }
   .main-banner-top {
+    display: block;
+    padding-top: 80px; }
+  .secondary-banner-container-mobile {
+    display: none; }
+  .secondary-banner-container {
     display: block; } }

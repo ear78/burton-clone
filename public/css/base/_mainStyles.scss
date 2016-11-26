@@ -26,13 +26,15 @@ $darkgrey: #4e4c4b;
 $lightgrey: #d4d4d4;
 $grey: #918d8d;
 $carouselBackground: #e5e5e5;
-
+$linkActive: #459a9d; // lightseagreen
+$linkHover: #888888; //lightergrey
 
 //// ICON FONT BASE STYLES ////
 .material-icons,
 .fa {
     color: $grey;
 }
+
 
 //// FONT SCALING /////////////
 h1 {
@@ -72,13 +74,17 @@ body {
 }
 
 a {
-    color: #4e4c4b;
+    color: $darkgrey;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: none;
-    color: lightgrey;
+    color: $linkHover;
+}
+
+a:active {
+    color: $linkActive;
 }
 
 ////////////////////////////////////
@@ -89,6 +95,7 @@ a:hover {
 }
 
 .subtitle {
+  text-transform: uppercase;
   margin-bottom: 30px;
 }
 
@@ -124,6 +131,10 @@ a:hover {
     border: 1px solid #4e4c4b;
     padding: 12px 25px;
     text-transform: uppercase;
+}
+
+.standard-button:hover {
+    border-color: $linkHover;
 }
 
 //////////////////////////////////
@@ -172,4 +183,27 @@ a:hover {
 }
 .carousel-image {
     max-width: 100%;
+}
+
+//////////////////////////////////////////
+//// MEDIA QUERIES
+/////////////////////////////////////////
+
+@media (min-width: 768px) {
+  .info {
+    color: #fff;
+  }
+
+  .subtitle {
+    font-size: 1.125em;
+    margin-bottom: 30px;
+  }
+
+  .btn-action-container {
+    border: 1px solid #FFF;
+  }
+
+  .btn-action-container a {
+    color: #fff;
+  }
 }
