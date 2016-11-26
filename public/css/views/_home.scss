@@ -38,7 +38,7 @@
     background-repeat: no-repeat;
     background-position: 50%;
     overflow: hidden;
-    height: 320px;
+    height: 460px;
     margin-bottom: 80px;
 }
 
@@ -47,6 +47,7 @@
 }
 
 .secondary-banner {
+    position: relative;
     padding-top: 20px;
     background-image: url('../../img/home/best-in-snow-mens-basic-bg-2x.jpg');
     background-size: cover;
@@ -197,6 +198,15 @@
     display: none;
   }
   .main-banner-top {
+      display: block;
+      padding-top: 80px;
+  }
+
+  .secondary-banner-container-mobile {
+      display: none;
+  }
+
+  .secondary-banner-container {
       display: block;
   }
 

@@ -33,6 +33,9 @@
           border: 1px solid $lightgrey;
           padding: 12px 10px;
       }
+      input:focus {
+        outline: none;
+      }
       .footer-mail-icon {
           color: $grey;
           position: absolute;
@@ -125,7 +128,7 @@
 //////////////////////////////////////
 .mobile-dropdown-aboutus.ng-hide-add,
 .mobile-dropdown-aboutus.ng-hide-remove {
-    transition: opacity .1s ease, max-height .3s ease;
+    transition: opacity 300ms ease, max-height .4s ease;
 }
 
 .mobile-dropdown-aboutus.ng-hide-add-active,
