@@ -167,6 +167,8 @@ a:active {
   max-width: 100%; }
 
 @media (min-width: 768px) {
+  body {
+    font-size: 15px; }
   .info {
     color: #fff; }
   .subtitle {
@@ -221,11 +223,33 @@ a:active {
 .main-header-wrapper {
   display: none; }
 
+.main-header-topnav {
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 15px; }
+
 .main-header-left {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
+  .main-header-left div {
+    margin-right: 15px; }
 
 .main-header-right {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
+  .main-header-right div {
+    margin-right: 15px; }
+
+.main-header-bottomnav {
+  display: flex;
+  padding-top: 40px;
+  max-height: 65px; }
+  .main-header-bottomnav div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .main-header-bottomnav input {
+    padding: 15px;
+    border: 1px solid #d4d4d4; }
 
 @media (min-width: 992px) {
   .main-header-wrapper {
@@ -342,12 +366,64 @@ a:active {
   opacity: 1; }
 
 @media (min-width: 768px) {
+  .footer-container {
+    font-size: .9em; }
   .footer-top-row {
-    flex-direction: row;
-    border-bottom: 1px solid grey; }
+    flex-direction: column;
+    border-bottom: none; }
+  .footer-forms {
+    padding: 35px 40px 15px; }
+    .footer-forms .footer-mail-icon {
+      top: 70px;
+      right: 55px; }
+    .footer-forms .footer-location-icon {
+      top: 173px;
+      right: 55px; }
+  .footer-mobile-menus-container {
+    padding-right: 20px;
+    padding-left: 20px; } }
+
+@media (min-width: 992px) {
   .footer-inner-row-left {
     display: flex;
-    width: 50%; } }
+    width: 55%;
+    padding: 35px; }
+  .footer-mobile-inner-container {
+    display: none; }
+  .footer-top-row {
+    flex-direction: row; }
+  .footer-forms {
+    width: 45%; }
+  .primary-links-column {
+    margin-right: 40px; }
+    .primary-links-column nav {
+      width: 99%; }
+    .primary-links-column h4 {
+      margin-bottom: 5px; }
+    .primary-links-column a {
+      margin: 10px 0; }
+    .primary-links-column span {
+      color: #459a9d;
+      display: flex;
+      align-items: center; }
+      .primary-links-column span i {
+        font-size: 20px;
+        color: #459a9d; }
+  .footer-bottom-row {
+    max-width: 95%;
+    flex-direction: row; }
+    .footer-bottom-row .secondary-links {
+      order: 1;
+      margin-right: 30px;
+      margin-bottom: 0px; }
+    .footer-bottom-row .social-links {
+      order: 0; } }
+
+@media (min-width: 1300px) {
+  .footer-bottom-row,
+  .footer-top-row {
+    margin: 0 auto;
+    max-width: 1280px; } }
 
 .sidemenu-container.ng-hide-add {
   transition: transform .1s ease; }
@@ -489,9 +565,13 @@ a:active {
   height: 460px;
   margin-bottom: 40px; }
 
+.secondary-banner-info-mobile .title {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif; }
+
 .main-banner-top {
   display: none;
-  margin-top: 55px;
+  margin-top: 30px;
   background-image: url("../../img/home/gift-guide-overview-basic-bg-2x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -522,7 +602,7 @@ a:active {
   position: absolute;
   top: 230px;
   width: 65%;
-  left: 5%; }
+  left: 17%; }
 
 .secondary-banner-img2 {
   width: 282px;
@@ -630,7 +710,33 @@ a:active {
   .main-banner-top {
     display: block;
     padding-top: 80px; }
-  .secondary-banner-container-mobile {
+  .secondary-banner-container-mobile,
+  .secondary-banner-info-mobile {
     display: none; }
   .secondary-banner-container {
-    display: block; } }
+    display: block; }
+  .secondary-banner {
+    padding-left: 20px;
+    padding-top: 40px; }
+  .secondary-banner-img {
+    padding-top: 20px; }
+  .secondary-banner-img2 {
+    max-width: 38%; }
+  .secondary-banner-img-container {
+    left: 5%; }
+  .secondary-info {
+    color: #fff; }
+  .secondary-subtitle {
+    text-transform: uppercase;
+    font-size: 1.125em;
+    margin-bottom: 30px; }
+  .secondary-title {
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    margin-bottom: 40px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    font-size: 3em;
+    line-height: 1.2; }
+  .third-section-textbox h2 {
+    font-size: 2.25em; } }

@@ -26,7 +26,7 @@ $darkgrey: #4e4c4b;
 $lightgrey: #d4d4d4;
 $grey: #918d8d;
 $carouselBackground: #e5e5e5;
-$linkActive: #459a9d; // lightseagreen
+$seagreen: #459a9d; // lightseagreen
 $linkHover: #888888; //lightergrey
 
 //// ICON FONT BASE STYLES ////
@@ -84,7 +84,7 @@ a:hover {
 }
 
 a:active {
-    color: $linkActive;
+    color: $seagreen;
 }
 
 ////////////////////////////////////
@@ -190,6 +190,10 @@ a:active {
 /////////////////////////////////////////
 
 @media (min-width: 768px) {
+  body {
+      font-size: 15px;
+  }
+
   .info {
     color: #fff;
   }

@@ -28,11 +28,16 @@
     margin-bottom: 40px;
 }
 
+.secondary-banner-info-mobile .title {
+  text-transform: uppercase;
+  font-family: $mainFont;
+}
+
 
 //// DESKTOP VIEWS ////////////////////
 .main-banner-top {
     display: none;
-    margin-top: 55px;
+    margin-top: 30px;
     background-image: url('../../img/home/gift-guide-overview-basic-bg-2x.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -67,7 +72,7 @@
     position: absolute;
     top: 230px;
     width: 65%;
-    left: 5%;
+    left: 17%;
 }
 
 .secondary-banner-img2 {
@@ -202,12 +207,54 @@
       padding-top: 80px;
   }
 
-  .secondary-banner-container-mobile {
+  .secondary-banner-container-mobile,
+  .secondary-banner-info-mobile {
       display: none;
   }
 
   .secondary-banner-container {
       display: block;
+  }
+
+  .secondary-banner {
+      padding-left: 20px;
+      padding-top: 40px;
+  }
+
+  .secondary-banner-img {
+      padding-top: 20px;
+  }
+
+  .secondary-banner-img2 {
+      max-width: 38%;
+  }
+
+  .secondary-banner-img-container {
+      left: 5%;
+  }
+
+  .secondary-info {
+      color: #fff;
+  }
+
+  .secondary-subtitle {
+      text-transform: uppercase;
+      font-size: 1.125em;
+      margin-bottom: 30px;
+  }
+
+  .secondary-title {
+      text-transform: uppercase;
+      font-family: $mainFont;
+      margin-bottom: 40px;
+      font-weight: 300;
+      letter-spacing: 5px;
+      font-size: 3em;
+      line-height: 1.2;
+  }
+
+  .third-section-textbox h2 {
+      font-size: 2.25em;
   }
 
 }
