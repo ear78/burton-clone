@@ -60,12 +60,40 @@
     display: none;
 }
 
+.main-header-topnav {
+  border-bottom: 1px solid $lightgrey;
+  padding-bottom: 15px;
+}
+
 .main-header-left {
     display: flex;
+    justify-content: center;
+    div {
+      margin-right: 15px;
+    }
 }
 
 .main-header-right {
     display: flex;
+    justify-content: center;
+    div {
+      margin-right: 15px;
+    }
+}
+
+.main-header-bottomnav {
+  display: flex;
+  padding-top: 40px;
+  max-height: 65px;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    input {
+      padding: 15px;
+      border: 1px solid $lightgrey;
+    }
 }
 
 ///////////////////////////////////////
