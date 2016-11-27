@@ -37,7 +37,7 @@
 //// DESKTOP VIEWS ////////////////////
 .main-banner-top {
     display: none;
-    margin-top: 30px;
+    // margin-top: 30px;
     background-image: url('../../img/home/gift-guide-overview-basic-bg-2x.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -257,4 +257,12 @@
       font-size: 2.25em;
   }
 
+}
+
+@media (min-width: 992px) {
+  .secondary-banner-img-container {
+    top: 155px;
+    width: 56%;
+    left: 9%;
+  }
 }
