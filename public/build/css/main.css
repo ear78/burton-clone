@@ -179,6 +179,10 @@ a:active {
   .btn-action-container a {
     color: #fff; } }
 
+@media (min-width: 992px) {
+  .burton-logo {
+    width: 135px; } }
+
 .mobile-header-container {
   display: flex;
   justify-content: space-between;
@@ -225,13 +229,19 @@ a:active {
 
 .main-header-topnav {
   border-bottom: 1px solid #d4d4d4;
-  padding-bottom: 15px; }
+  background: #fff;
+  height: 45px;
+  display: flex;
+  align-items: center; }
 
 .main-header-left {
   display: flex;
   justify-content: center; }
   .main-header-left div {
     margin-right: 15px; }
+
+.main-header-mid {
+  color: #918d8d; }
 
 .main-header-right {
   display: flex;
@@ -241,8 +251,8 @@ a:active {
 
 .main-header-bottomnav {
   display: flex;
-  padding-top: 40px;
-  max-height: 65px; }
+  height: 100px;
+  background: #fff; }
   .main-header-bottomnav div {
     display: flex;
     justify-content: center;
@@ -250,6 +260,10 @@ a:active {
   .main-header-bottomnav input {
     padding: 15px;
     border: 1px solid #d4d4d4; }
+  .main-header-bottomnav span {
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-size: .9em; }
 
 @media (min-width: 992px) {
   .main-header-wrapper {
@@ -305,13 +319,19 @@ a:active {
   flex-direction: column;
   max-width: 500px;
   margin: 0 auto; }
-  .footer-bottom-row .secondary-links.social-links {
+  .footer-bottom-row .social-links {
     display: flex;
     justify-content: space-between;
     width: 100%;
     order: 1;
     margin-bottom: 40px; }
   .footer-bottom-row .secondary-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    order: 2;
+    margin-bottom: 20px; }
+  .footer-bottom-row .secondary-links-right {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -384,6 +404,8 @@ a:active {
     padding-left: 20px; } }
 
 @media (min-width: 992px) {
+  .footer-container {
+    padding-bottom: 0px; }
   .footer-inner-row-left {
     display: flex;
     width: 55%;
@@ -411,13 +433,27 @@ a:active {
         color: #459a9d; }
   .footer-bottom-row {
     max-width: 95%;
-    flex-direction: row; }
+    flex-direction: row;
+    border-top: 1px solid #d4d4d4;
+    padding-top: 30px; }
     .footer-bottom-row .secondary-links {
       order: 1;
-      margin-right: 30px;
-      margin-bottom: 0px; }
+      margin-bottom: 0px;
+      justify-content: flex-start; }
+      .footer-bottom-row .secondary-links a {
+        margin-right: 20px; }
+    .footer-bottom-row .secondary-links-right {
+      order: 1;
+      margin-bottom: 0px;
+      justify-content: flex-end; }
+      .footer-bottom-row .secondary-links-right a {
+        margin-left: 20px; }
     .footer-bottom-row .social-links {
-      order: 0; } }
+      order: 1;
+      margin-bottom: 0px;
+      justify-content: center; }
+      .footer-bottom-row .social-links a {
+        margin: 0 15px; } }
 
 @media (min-width: 1300px) {
   .footer-bottom-row,
@@ -571,7 +607,6 @@ a:active {
 
 .main-banner-top {
   display: none;
-  margin-top: 30px;
   background-image: url("../../img/home/gift-guide-overview-basic-bg-2x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -740,3 +775,9 @@ a:active {
     line-height: 1.2; }
   .third-section-textbox h2 {
     font-size: 2.25em; } }
+
+@media (min-width: 992px) {
+  .secondary-banner-img-container {
+    top: 155px;
+    width: 56%;
+    left: 9%; } }
