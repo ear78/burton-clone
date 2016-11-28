@@ -77,7 +77,7 @@ h6 {
 body {
   background-color: #f5f5f5;
   font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.1; }
 
 a {
@@ -129,47 +129,11 @@ a:active {
 .standard-button:hover {
   border-color: #888888; }
 
-.picture-contain {
-  width: 100%;
-  height: 200px;
-  position: absolute;
-  overflow: hidden;
-  left: 0;
-  top: 345px; }
-
-.pic1 {
-  left: -130px;
-  opacity: .6; }
-
-.picture-holder i {
-  position: absolute;
-  z-index: 10;
-  top: 80px;
-  font-size: 50px;
-  color: #262626; }
-
-.picture-holder i.arrow-right {
-  right: 0px; }
-
-.carousel-container {
-  padding: 80px 0; }
-
-.picture-holder {
-  width: 1500px; }
-
-.carousel-pic-container {
-  width: 200px;
-  display: inline-block;
-  position: relative;
-  margin: 0 5px; }
-
-.carousel-image {
-  max-width: 100%; }
-
 @media (min-width: 768px) {
   body {
     font-size: 15px; }
   .info {
+    padding-top: 20px;
     color: #fff; }
   .subtitle {
     font-size: 1.125em;
@@ -301,12 +265,12 @@ a:active {
   .footer-forms .footer-mail-icon {
     color: #918d8d;
     position: absolute;
-    top: 86px;
+    top: 70px;
     right: 35px; }
   .footer-forms .footer-location-icon {
     color: #918d8d;
     position: absolute;
-    top: 190px;
+    top: 170px;
     right: 35px; }
   .footer-forms form {
     margin-bottom: 20px; }
@@ -341,6 +305,10 @@ a:active {
 .primary-links-nav {
   display: flex;
   flex-direction: column; }
+  .primary-links-nav .underline {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 15px;
+    margin-bottom: 6px; }
 
 .social-links a {
   width: 30px;
@@ -417,13 +385,14 @@ a:active {
   .footer-forms {
     width: 45%; }
   .primary-links-column {
-    margin-right: 40px; }
+    width: 120px;
+    margin-right: 45px; }
     .primary-links-column nav {
       width: 99%; }
     .primary-links-column h4 {
       margin-bottom: 5px; }
     .primary-links-column a {
-      margin: 10px 0; }
+      margin: 8px 0; }
     .primary-links-column span {
       color: #459a9d;
       display: flex;
@@ -460,6 +429,42 @@ a:active {
   .footer-top-row {
     margin: 0 auto;
     max-width: 1280px; } }
+
+.picture-contain {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 345px; }
+
+.picture-holder {
+  width: 2000px; }
+
+.pic1 {
+  left: -130px; }
+
+.picture-holder i {
+  position: absolute;
+  z-index: 10;
+  top: 80px;
+  font-size: 50px;
+  color: #262626; }
+
+.picture-holder i.arrow-right {
+  right: 0px; }
+
+.carousel-container {
+  padding: 80px 0; }
+
+.carousel-pic-container {
+  width: 200px;
+  display: inline-block;
+  position: relative;
+  margin: 0 5px; }
+
+.carousel-image {
+  max-width: 100%; }
 
 .sidemenu-container.ng-hide-add {
   transition: transform .1s ease; }
@@ -605,6 +610,9 @@ a:active {
   text-transform: uppercase;
   font-family: "Lato", sans-serif; }
 
+.secondary-banner-info-mobile {
+  height: 300px; }
+
 .main-banner-top {
   display: none;
   background-image: url("../../img/home/gift-guide-overview-basic-bg-2x.jpg");
@@ -729,7 +737,7 @@ a:active {
   text-decoration: underline; }
 
 .fourth-section-textbox {
-  margin-bottom: 50px; }
+  margin-bottom: 60px; }
   .fourth-section-textbox h2 {
     font-size: 2.15em;
     margin-bottom: 15px; }
@@ -774,7 +782,28 @@ a:active {
     font-size: 3em;
     line-height: 1.2; }
   .third-section-textbox h2 {
-    font-size: 2.25em; } }
+    font-size: 2.25em; }
+  .fourth-section-content-insta {
+    display: none; }
+  .fourth-section-content {
+    display: block; }
+    .fourth-section-content .fourth-section-content-insta-desktop {
+      display: block; }
+      .fourth-section-content .fourth-section-content-insta-desktop h3 {
+        font-size: 1.125em;
+        text-transform: uppercase;
+        margin-bottom: 20px; }
+      .fourth-section-content .fourth-section-content-insta-desktop i {
+        margin-right: 3px;
+        font-size: .8em; }
+      .fourth-section-content .fourth-section-content-insta-desktop a {
+        text-decoration: underline;
+        text-transform: uppercase;
+        font-size: .8em;
+        letter-spacing: 1px; }
+  .fourth-section-container {
+    height: 630px;
+    padding-top: 60px; } }
 
 @media (min-width: 992px) {
   .secondary-banner-img-container {

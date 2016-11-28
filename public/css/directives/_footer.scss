@@ -39,13 +39,13 @@
       .footer-mail-icon {
           color: $grey;
           position: absolute;
-          top: 86px;
+          top: 70px;
           right: 35px;
       }
       .footer-location-icon {
           color: $grey;
           position: absolute;
-          top: 190px;
+          top: 170px;
           right: 35px;
       }
       form {
@@ -88,6 +88,11 @@
 .primary-links-nav {
     display: flex;
     flex-direction: column;
+    .underline {
+      border-bottom: 1px solid lightgray;
+      padding-bottom: 15px;
+      margin-bottom: 6px;
+    }
 }
 
 .social-links a {
@@ -211,15 +216,16 @@
   }
 
   .primary-links-column {
+    width: 120px;
     nav {
       width: 99%;
     }
-    margin-right: 40px;
+    margin-right: 45px;
     h4 {
       margin-bottom: 5px;
     }
     a {
-      margin: 10px 0;
+      margin: 8px 0;
     }
     span {
       color: $seagreen;
