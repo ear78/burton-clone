@@ -1,5 +1,5 @@
 angular.module('myApp')
-  .directive('picGallery', function(){
+  .directive('picGalleryDirective', function(){
     return {
       restrict: 'E',
       templateUrl: '../../views/directives/picGalleryDirective.html'
