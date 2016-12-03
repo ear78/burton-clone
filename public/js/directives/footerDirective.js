@@ -1,4 +1,4 @@
-angular.module('myApp')
+ angular.module('myApp')
   .directive('footerDirective', function(){
     return {
       restrict: 'E',
