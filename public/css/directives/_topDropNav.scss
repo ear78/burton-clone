@@ -1,3 +1,17 @@
+.topdropnav-container.ng-hide-add,
+.topdropnav-container.ng-hide-remove {
+  transition: opacity .1s ease;
+}
+
+.topdropnav-container.ng-hide-add-active,
+.topdropnav-container.ng-hide-remove {
+  opacity: 0;
+}
+
+.topdropnav-container.ng-hide-remove-active {
+  opacity: 1;
+}
+
 .topdropnav-container {
   max-height: 400px;
   width: 100%;
@@ -28,6 +42,15 @@
     color: $seagreen;
     text-transform: uppercase;
   }
+}
+
+.hover-box {
+  height: 95px;
+  width: 45px;
+  position: absolute;
+  top: -60px;
+  left: 330px;
+  // border: 1px solid red;
 }
 
 .dropnav-pic-container {
