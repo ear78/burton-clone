@@ -1,5 +1,5 @@
 angular.module('myApp')
-  .directive('topDropNavDirective', function(){
+  .directive('topDropNavDirective', function($timeout){
 
     return {
       restrict: 'E',
@@ -10,7 +10,7 @@ angular.module('myApp')
 
         // FUNCTION FOR TOGGLE DROP NAV
         scope.toggleDropNav = function(){
-          scope.dropNav = !scope.dropNav;
+            scope.dropNav = !scope.dropNav;
         }
       }
     };
