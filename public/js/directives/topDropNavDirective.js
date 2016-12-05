@@ -12,6 +12,8 @@ angular.module('myApp')
         scope.toggleDropNav = function(){
             scope.dropNav = !scope.dropNav;
         }
+
+        element.addClass('nav-hover');
       }
     };
   });

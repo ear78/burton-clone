@@ -114,9 +114,6 @@ a:active {
   text-align: center;
   text-transform: uppercase; }
 
-.burton-logo {
-  width: 115px; }
-
 .background-layer {
   position: absolute;
   width: 100%;
@@ -144,9 +141,74 @@ a:active {
   .btn-action-container a {
     color: #fff; } }
 
-@media (min-width: 992px) {
-  .burton-logo {
-    width: 135px; } }
+.logo-close-box {
+  margin: 0;
+  width: 135px;
+  height: 35px;
+  position: absolute;
+  top: 75px;
+  left: 4%;
+  z-index: 5; }
+
+.burton-logo {
+  width: 135px; }
+
+.burton-logo.ng-hide-remove {
+  transition: all .3s ease .25s; }
+
+.burton-logo.ng-hide-add {
+  transition: all .3s ease; }
+
+.burton-logo.ng-hide-add-active,
+.burton-logo.ng-hide-remove {
+  opacity: 0; }
+
+.burton-logo.ng-hide-remove-active {
+  opacity: 1; }
+
+.hidden-logo2.ng-hide-add,
+.hidden-logo.ng-hide-add {
+  transition: opacity .2s ease; }
+
+.hidden-logo.ng-hide-remove {
+  transition: all .3s ease .25s; }
+
+.hidden-logo.ng-hide-add-active,
+.hidden-logo.ng-hide-remove {
+  opacity: 0;
+  left: -300px; }
+
+.hidden-logo.ng-hide-remove-active {
+  opacity: 1;
+  left: 5%; }
+
+.hidden-logo {
+  opacity: 1;
+  position: absolute;
+  top: 75px;
+  left: 5%;
+  width: 112px;
+  height: 17px; }
+
+.hidden-logo2.ng-hide-remove {
+  transition: all .3s ease .25s; }
+
+.hidden-logo2.ng-hide-add-active,
+.hidden-logo2.ng-hide-remove {
+  opacity: 0;
+  top: 99px; }
+
+.hidden-logo2.ng-hide-remove-active {
+  opacity: 1;
+  top: 95px; }
+
+.hidden-logo2 {
+  opacity: 1;
+  position: absolute;
+  top: 95px;
+  left: 5%;
+  width: 130px;
+  height: auto; }
 
 .mobile-header-container {
   display: flex;
@@ -235,6 +297,15 @@ a:active {
     display: initial; }
   .mobile-header-container {
     display: none; } }
+
+@media (min-width: 1200px) {
+  .logo-close-box {
+    left: 5%; }
+  .hidden-logo2,
+  .hidden-logo {
+    left: 7%; }
+  .hidden-logo.ng-hide-remove-active {
+    left: 7%; } }
 
 .footer-container {
   background: #fff;
@@ -619,12 +690,13 @@ a:active {
     color: #459a9d;
     text-transform: uppercase; }
 
-.hover-box {
+span.hover-box {
   height: 95px;
   width: 45px;
   position: absolute;
-  top: -60px;
-  left: 330px; }
+  top: 0px;
+  left: -17px;
+  border: 1px solid red; }
 
 .dropnav-pic-container {
   text-align: center; }

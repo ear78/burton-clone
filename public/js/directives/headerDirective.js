@@ -1,5 +1,5 @@
 angular.module('myApp')
-  .directive('headerDirective', function(){
+  .directive('headerDirective', function($log){
     return {
       restrict: 'E',
       templateUrl: '../../views/directives/headerDirective.html',
@@ -19,6 +19,15 @@ angular.module('myApp')
         scope.closeSideMenu = function(){
           scope.hideSideMenu = !scope.hideSideMenu;
           scope.toggle = !scope.toggle;
+        }
+
+        scope.logoShow = true;
+        scope.logoSwitch = function(){
+          scope.logoShow = !scope.logoShow;
+        }
+
+        scope.test = function(){
+          console.log('clicked');
         }
 
       }

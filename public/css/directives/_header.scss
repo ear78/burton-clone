@@ -1,3 +1,99 @@
+
+//////////////////////////////////////
+// BURTON LOGO ANIMATIONS
+/////////////////////////////////////
+.logo-close-box {
+  margin: 0;
+  // border: 1px solid red;
+  width: 135px;
+  height: 35px;
+  position: absolute;
+  top: 75px;
+  left: 4%;
+  z-index: 5;
+}
+
+.burton-logo {
+    width: 135px;
+}
+
+.burton-logo.ng-hide-remove {
+  transition: all .3s ease .25s;
+}
+.burton-logo.ng-hide-add {
+  transition: all .3s ease;
+}
+
+.burton-logo.ng-hide-add-active,
+.burton-logo.ng-hide-remove {
+  opacity: 0;
+}
+
+.burton-logo.ng-hide-remove-active {
+  opacity: 1;
+}
+
+//////////////////////////////////////
+// HIDDEN LOGOS ANIMATIONS
+/////////////////////////////////////
+.hidden-logo2.ng-hide-add,
+.hidden-logo.ng-hide-add {
+  transition: opacity .2s ease;
+}
+
+.hidden-logo.ng-hide-remove {
+  transition: all .3s ease .25s;
+}
+
+.hidden-logo.ng-hide-add-active,
+.hidden-logo.ng-hide-remove {
+  opacity: 0;
+  left: -300px;
+}
+
+.hidden-logo.ng-hide-remove-active {
+  opacity: 1;
+  left: 5%;
+}
+
+.hidden-logo {
+  opacity: 1;
+  position: absolute;
+  top: 75px;
+  left: 5%;
+  width: 112px;
+  height: 17px;
+}
+
+///////////////////////////////////////
+//// HIDDEN LOGO 2 ANIMATIONS
+//////////////////////////////////////
+
+.hidden-logo2.ng-hide-remove {
+  transition: all .3s ease .25s;
+}
+
+.hidden-logo2.ng-hide-add-active,
+.hidden-logo2.ng-hide-remove {
+  opacity: 0;
+  top: 99px;
+}
+
+.hidden-logo2.ng-hide-remove-active {
+  opacity: 1;
+  top: 95px;
+}
+
+.hidden-logo2 {
+  opacity: 1;
+  position: absolute;
+  top: 95px;
+  left: 5%;
+  width: 130px;
+  height: auto;
+}
+
+
 //////////////////////////////////////
 // MOBILE MENU
 /////////////////////////////////////
@@ -88,6 +184,10 @@
     }
 }
 
+///////////////////////////////////////
+//// MAIN HEADER BOTTOM NAV
+//////////////////////////////////////
+
 .main-header-bottomnav {
   display: flex;
   height: 100px;
@@ -106,7 +206,8 @@
       text-transform: uppercase;
       font-size: .9em;
     }
-}
+  }
+
 
 ///////////////////////////////////////
 //// MEDIA QUERIES
@@ -119,5 +220,18 @@
 
   .mobile-header-container {
     display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-close-box {
+    left: 5%;
+  }
+  .hidden-logo2,
+  .hidden-logo {
+    left: 7%;
+  }
+  .hidden-logo.ng-hide-remove-active {
+    left: 7%;
   }
 }
