@@ -21,15 +21,11 @@ angular.module('myApp')
           scope.toggle = !scope.toggle;
         }
 
+        //LOGO SWITCH FUNCTION
         scope.logoShow = true;
         scope.logoSwitch = function(){
           scope.logoShow = !scope.logoShow;
         }
-
-        scope.test = function(){
-          console.log('clicked');
-        }
-
       }
     };
   });

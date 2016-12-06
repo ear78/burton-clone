@@ -13,7 +13,6 @@ angular.module('myApp')
             scope.dropNav = !scope.dropNav;
         }
 
-        element.addClass('nav-hover');
       }
     };
   });

@@ -47,6 +47,15 @@
     color: $seagreen;
     text-transform: uppercase;
   }
+  a.dropnav-links {
+    color: $grey;
+  }
+
+  a.dropnav-links:hover {
+    color: $seagreen;
+    cursor: pointer;
+  }
+
 }
 
 /////////////////////////////////////////////////////
@@ -55,10 +64,10 @@
 
 span.hover-box {
   height: 95px;
-  width: 45px;
   position: absolute;
-  top: 0px;
-  left: -17px;
+  width: 50px;
+  top: -58px;
+  left: 30%;
   border: 1px solid red;
 }
 
