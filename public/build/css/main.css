@@ -128,8 +128,6 @@ a:active {
   border-color: #888888; }
 
 @media (min-width: 768px) {
-  body {
-    font-size: 15px; }
   .info {
     padding-top: 20px;
     color: #fff; }
@@ -151,13 +149,18 @@ a:active {
   z-index: 5; }
 
 .burton-logo {
-  width: 135px; }
+  width: 115px;
+  transition: all .2s ease; }
 
 .burton-logo.ng-hide-remove {
+  -moz-transition: all .3s ease .25s;
+  -webkit-transition: all .3s ease .25s;
   transition: all .3s ease .25s; }
 
 .burton-logo.ng-hide-add {
-  transition: all .3s ease; }
+  transition: all .3s ease;
+  -moz-transition: all .3s ease .25s;
+  -webkit-transition: all .3s ease .25s; }
 
 .burton-logo.ng-hide-add-active,
 .burton-logo.ng-hide-remove {
@@ -166,12 +169,17 @@ a:active {
 .burton-logo.ng-hide-remove-active {
   opacity: 1; }
 
+HIDDEN LOGOS ANIMATIONS
 .hidden-logo2.ng-hide-add,
 .hidden-logo.ng-hide-add {
-  transition: opacity .2s ease; }
+  transition: opacity .2s ease;
+  -moz-transition: opacity .2s ease;
+  -webkit-transition: opacity .2s ease; }
 
 .hidden-logo.ng-hide-remove {
-  transition: all .3s ease .25s; }
+  transition: all .3s ease .25s;
+  -moz-transition: all .3s ease .25s;
+  -webkit-transition: all .3s ease .25s; }
 
 .hidden-logo.ng-hide-add-active,
 .hidden-logo.ng-hide-remove {
@@ -191,7 +199,9 @@ a:active {
   height: 17px; }
 
 .hidden-logo2.ng-hide-remove {
-  transition: all .3s ease .25s; }
+  transition: all .3s ease .25s;
+  -moz-transition: all .3s ease .25s;
+  -webkit-transition: all .3s ease .25s; }
 
 .hidden-logo2.ng-hide-add-active,
 .hidden-logo2.ng-hide-remove {
@@ -291,6 +301,10 @@ a:active {
     margin: 0 10px;
     text-transform: uppercase;
     font-size: .9em; }
+
+@media (min-width: 768px) {
+  .burton-logo {
+    width: 125px; } }
 
 @media (min-width: 992px) {
   .main-header-wrapper {
@@ -689,13 +703,18 @@ a:active {
     font-size: .9em;
     color: #459a9d;
     text-transform: uppercase; }
+  .topdropnav-container a.dropnav-links {
+    color: #918d8d; }
+  .topdropnav-container a.dropnav-links:hover {
+    color: #459a9d;
+    cursor: pointer; }
 
 span.hover-box {
   height: 95px;
-  width: 45px;
   position: absolute;
-  top: 0px;
-  left: -17px;
+  width: 50px;
+  top: -58px;
+  left: 30%;
   border: 1px solid red; }
 
 .dropnav-pic-container {
@@ -724,7 +743,9 @@ ul.nested-list {
   height: 320px;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease; }
 
 .secondary-banner-container-mobile {
   position: relative;
@@ -751,7 +772,10 @@ ul.nested-list {
   background-position: 50%;
   overflow: hidden;
   height: 460px;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -webkit-transition: all .2s ease; }
 
 .secondary-banner-container {
   display: none; }

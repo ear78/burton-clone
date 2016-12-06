@@ -4,7 +4,6 @@
 /////////////////////////////////////
 .logo-close-box {
   margin: 0;
-  // border: 1px solid red;
   width: 135px;
   height: 35px;
   position: absolute;
@@ -14,14 +13,20 @@
 }
 
 .burton-logo {
-    width: 135px;
+    width: 115px;
+    transition: all .2s ease;
 }
 
 .burton-logo.ng-hide-remove {
+  -moz-transition: all .3s ease .25s;
+  -webkit-transition: all .3s ease .25s;
   transition: all .3s ease .25s;
+
 }
 .burton-logo.ng-hide-add {
   transition: all .3s ease;
+  -moz-transition: all .3s ease .25s;
+  -webkit-transition: all .3s ease .25s;
 }
 
 .burton-logo.ng-hide-add-active,
@@ -33,16 +38,20 @@
   opacity: 1;
 }
 
-//////////////////////////////////////
-// HIDDEN LOGOS ANIMATIONS
-/////////////////////////////////////
+////////////////////////////////////
+HIDDEN LOGOS ANIMATIONS
+///////////////////////////////////
 .hidden-logo2.ng-hide-add,
 .hidden-logo.ng-hide-add {
   transition: opacity .2s ease;
+  -moz-transition: opacity .2s ease;
+  -webkit-transition: opacity .2s ease;
 }
 
 .hidden-logo.ng-hide-remove {
   transition: all .3s ease .25s;
+  -moz-transition: all .3s ease .25s;
+  -webkit-transition: all .3s ease .25s;
 }
 
 .hidden-logo.ng-hide-add-active,
@@ -71,6 +80,9 @@
 
 .hidden-logo2.ng-hide-remove {
   transition: all .3s ease .25s;
+  -moz-transition: all .3s ease .25s;
+  -webkit-transition: all .3s ease .25s;
+
 }
 
 .hidden-logo2.ng-hide-add-active,
@@ -95,7 +107,7 @@
 
 
 //////////////////////////////////////
-// MOBILE MENU
+// MOBILE HEADER MENU
 /////////////////////////////////////
 
 .mobile-header-container {
@@ -151,6 +163,8 @@
 
 
 ///////////////////////////////////
+//// MAIN HEADER DESKTOP
+///////////////////////////////////
 
 .main-header-wrapper {
     display: none;
@@ -202,6 +216,7 @@
       border: 1px solid $lightgrey;
     }
     span {
+      // position: relative;
       margin: 0 10px;
       text-transform: uppercase;
       font-size: .9em;
@@ -213,6 +228,12 @@
 //// MEDIA QUERIES
 //////////////////////////////////////
 
+@media (min-width: 768px) {
+  .burton-logo {
+      width: 125px;
+  }
+
+}
 @media (min-width: 992px) {
   .main-header-wrapper {
       display: initial;
