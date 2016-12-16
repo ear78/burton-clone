@@ -76,11 +76,12 @@
     max-width: 100%;
 }
 
-.secondary-banner-img-container {
+.home .secondary-banner-img-container {
     position: absolute;
-    top: 230px;
-    width: 65%;
-    left: 17%;
+    top: 45%;
+    width: 60%;
+    left: 19%;
+    transition: all .1s ease;
 }
 
 .secondary-banner-img2 {
@@ -206,16 +207,38 @@
 }
 
 
+
+@media (min-width: 450px) {
+    .secondary-banner-container-mobile {
+        .secondary-banner-img-container {
+            top: 52%;
+            width: 40%;
+            left: 17%;
+        }
+    }
+
+    .third-section-pic1 {
+        background-position: initial;
+    }
+
+}
+
 @media (min-width: 768px) {
-  .main-banner-top-container-mobile {
+
+    .third-section-pic1 {
+        background-position: 50%;
+    }
+
+  .home .main-banner-top-container-mobile {
     display: none;
   }
-  .main-banner-top {
+
+  .home .main-banner-top {
       display: block;
       padding-top: 80px;
   }
 
-  .secondary-banner-container-mobile,
+  .home .secondary-banner-container-mobile,
   .secondary-banner-info-mobile {
       display: none;
   }
@@ -237,8 +260,8 @@
       max-width: 38%;
   }
 
-  .secondary-banner-img-container {
-      left: 5%;
+  .home .secondary-banner-img-container {
+      top: 54%
   }
 
   .secondary-info {
@@ -299,9 +322,30 @@
 }
 
 @media (min-width: 992px) {
-  .secondary-banner-img-container {
-    top: 155px;
-    width: 56%;
-    left: 9%;
+  .home .secondary-banner-img-container {
+    top: 54%;
+    width: 45%;
+    left: 30%;
   }
+
+  .home .main-banner-top {
+      padding-top: 60px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+    .home .secondary-banner-img-container {
+        top: 40%;
+        width: 45%;
+        left: 36%;
+    }
+
+    .home .secondary-banner {
+        padding-top: 5px;
+        .secondary-banner-info {
+            padding-top: 65px;
+        }
+    }
+
 }
