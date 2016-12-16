@@ -3,14 +3,14 @@ angular.module('myApp')
 
     return {
       restrict: 'E',
-      templateUrl: '../../views/directives/topDropNavDirective.html',
+      templateUrl: '../../views/directives/mensDropNavDirective.html',
       link: function(scope, element, attrs){
         // FLAG FOR DROP NAV
-        scope.dropNav = true;
+        scope.mensDropNav = true;
 
         // FUNCTION FOR TOGGLE DROP NAV
-        scope.toggleDropNav = function(){
-            scope.dropNav = !scope.dropNav;
+        scope.toggleMensDropNav = function(){
+            scope.mensDropNav = !scope.mensDropNav;
         }
 
       }

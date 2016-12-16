@@ -43,15 +43,16 @@
             ng-show="logoShow" ng-mouseEnter="logoSwitch()"/>
         </div>
         <div class="col-lg-6">
-            <span><a ui-sref="#" ng-mouseEnter="toggleDropNav()">Men</a></span>
-            <span><a ui-sref="#" >Women</a></span>
+            <span><a ui-sref="#" ng-mouseEnter="toggleMensDropNav()">Men</a></span>
+            <span><a ui-sref="#" ng-mouseEnter="toggleWomenDropNav()">Women</a></span>
             <span><a ui-sref="#" >Kids</a></span>
             <span><a ui-sref="#" >Bags &amp; luggage</a></span>
             <span><a ui-sref="#" >Coalition</a></span>
             <span><a ui-sref="#" >Sale</a></span>
         </div>
-        <div class="col-lg-3">
+        <div class="search-box col-lg-3">
             <input type="text" placeholder="Search" class="search-text"/>
+            <i class="material-icons">search</i>
         </div>
     </div>
 </header>

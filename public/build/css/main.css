@@ -128,16 +128,23 @@ a:active {
   border-color: #888888; }
 
 @media (min-width: 768px) {
-  .info {
-    padding-top: 20px;
+  .main-banner-top .info {
+    padding-top: 30px;
+    padding-right: 20%;
     color: #fff; }
-  .subtitle {
+  .main-banner-top .subtitle {
     font-size: 1.125em;
     margin-bottom: 30px; }
   .btn-action-container {
     border: 1px solid #FFF; }
   .btn-action-container a {
     color: #fff; } }
+
+@media (min-width: 992px) {
+  .main-banner-top .title {
+    font-size: 3.65em; }
+  .main-banner-top .subtitle {
+    font-size: 1.25em; } }
 
 .logo-close-box {
   margin: 0;
@@ -295,12 +302,16 @@ HIDDEN LOGOS ANIMATIONS
     justify-content: center;
     align-items: center; }
   .main-header-bottomnav input {
-    padding: 15px;
+    padding: 15px 10px;
     border: 1px solid #d4d4d4; }
   .main-header-bottomnav span {
     margin: 0 10px;
     text-transform: uppercase;
     font-size: .9em; }
+  .main-header-bottomnav i {
+    position: absolute;
+    right: 24%;
+    top: 38px; }
 
 @media (min-width: 768px) {
   .burton-logo {
@@ -319,7 +330,9 @@ HIDDEN LOGOS ANIMATIONS
   .hidden-logo {
     left: 7%; }
   .hidden-logo.ng-hide-remove-active {
-    left: 7%; } }
+    left: 7%; }
+  .main-header-bottomnav i {
+    right: 29%; } }
 
 .footer-container {
   background: #fff;
@@ -448,10 +461,10 @@ HIDDEN LOGOS ANIMATIONS
   .footer-forms {
     padding: 35px 40px 15px; }
     .footer-forms .footer-mail-icon {
-      top: 70px;
+      top: 67px;
       right: 55px; }
     .footer-forms .footer-location-icon {
-      top: 173px;
+      top: 163px;
       right: 55px; }
   .footer-mobile-menus-container {
     padding-right: 20px;
@@ -795,11 +808,12 @@ ul.nested-list {
   width: 588px;
   max-width: 100%; }
 
-.secondary-banner-img-container {
+.home .secondary-banner-img-container {
   position: absolute;
-  top: 230px;
-  width: 65%;
-  left: 17%; }
+  top: 45%;
+  width: 60%;
+  left: 19%;
+  transition: all .1s ease; }
 
 .secondary-banner-img2 {
   width: 282px;
@@ -901,13 +915,23 @@ ul.nested-list {
     letter-spacing: 1px;
     margin-bottom: 5px; }
 
+@media (min-width: 450px) {
+  .secondary-banner-container-mobile .secondary-banner-img-container {
+    top: 52%;
+    width: 40%;
+    left: 17%; }
+  .third-section-pic1 {
+    background-position: initial; } }
+
 @media (min-width: 768px) {
-  .main-banner-top-container-mobile {
+  .third-section-pic1 {
+    background-position: 50%; }
+  .home .main-banner-top-container-mobile {
     display: none; }
-  .main-banner-top {
+  .home .main-banner-top {
     display: block;
     padding-top: 80px; }
-  .secondary-banner-container-mobile,
+  .home .secondary-banner-container-mobile,
   .secondary-banner-info-mobile {
     display: none; }
   .secondary-banner-container {
@@ -919,8 +943,8 @@ ul.nested-list {
     padding-top: 20px; }
   .secondary-banner-img2 {
     max-width: 38%; }
-  .secondary-banner-img-container {
-    left: 5%; }
+  .home .secondary-banner-img-container {
+    top: 54%; }
   .secondary-info {
     color: #fff; }
   .secondary-subtitle {
@@ -960,7 +984,19 @@ ul.nested-list {
     padding-top: 60px; } }
 
 @media (min-width: 992px) {
-  .secondary-banner-img-container {
-    top: 155px;
-    width: 56%;
-    left: 9%; } }
+  .home .secondary-banner-img-container {
+    top: 54%;
+    width: 45%;
+    left: 30%; }
+  .home .main-banner-top {
+    padding-top: 60px; } }
+
+@media (min-width: 1200px) {
+  .home .secondary-banner-img-container {
+    top: 40%;
+    width: 45%;
+    left: 36%; }
+  .home .secondary-banner {
+    padding-top: 5px; }
+    .home .secondary-banner .secondary-banner-info {
+      padding-top: 65px; } }
